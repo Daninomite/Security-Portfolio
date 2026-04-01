@@ -1,4 +1,4 @@
-notepad \~/Security-Portfolio/cheatsheets/linux-argument-order-cheatsheet.md
+
 
 ```
 
