@@ -1,13 +1,3 @@
-notepad \~/Security-Portfolio/cheatsheets/linux-argument-order-cheatsheet.md
-
-```
-
-
-
-Select \*\*all the text\*\* with \*\*Ctrl + A\*\*, delete it, then paste this properly formatted version:
-
-```
-
 \# Linux Command Argument Order Cheat Sheet
 
 
