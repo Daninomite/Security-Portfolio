@@ -28,7 +28,7 @@ As a security analyst I needed to:
 
 \- Use SQL to efficiently retrieve and organize relevant data
 
-from the machines and login\_attempts tables
+from the machines and login_attempts tables
 
 
 
@@ -72,7 +72,7 @@ Then I narrowed it down to specific columns I needed:
 
 ```sql
 
-SELECT device\_id, email\_client FROM machines;
+SELECT device_id, email_client FROM machines;
 
 ```
 
@@ -84,7 +84,7 @@ devices needing updates:
 
 ```sql
 
-SELECT device\_id, operating\_system, OS\_patch\_date FROM machines;
+SELECT device_id, operating_system, OS_patch_date FROM machines;
 
 ```
 
@@ -92,15 +92,15 @@ SELECT device\_id, operating\_system, OS\_patch\_date FROM machines;
 
 \### Step 2 — Investigated Login Activity
 
-Retrieved specific columns from the login\_attempts table
+Retrieved specific columns from the login_attempts table
 
 to look for unusual activity:
 
 ```sql
 
-SELECT event\_id, country FROM log\_in\_attempts;
+SELECT event_id, country FROM log_in_attempts;
 
-SELECT username, login\_date, login\_time FROM log\_in\_attempts;
+SELECT username, login_date, login_time FROM log_in_attempts;
 
 ```
 
@@ -110,7 +110,7 @@ Then pulled all login data for a complete view:
 
 ```sql
 
-SELECT \* FROM log\_in\_attempts;
+SELECT \* FROM log_in_attempts;
 
 ```
 
@@ -124,7 +124,7 @@ by date:
 
 ```sql
 
-SELECT \* FROM log\_in\_attempts ORDER BY login\_date;
+SELECT \* FROM log_in_attempts ORDER BY login_date;
 
 ```
 
@@ -136,7 +136,7 @@ sort to get precise chronological order:
 
 ```sql
 
-SELECT \* FROM log\_in\_attempts ORDER BY login\_date, login\_time;
+SELECT \* FROM log_in_attempts ORDER BY login_date, login_time;
 
 ```
 
