@@ -1,10 +1,10 @@
 \# Lab Write-Up: Basic SQL Queries
 
-\*\*Date:\*\* April 6, 2026
+**Date:** April 6, 2026
 
-\*\*Platform:\*\* Coursera — Google Cybersecurity Certificate
+**Platform:** Coursera — Google Cybersecurity Certificate
 
-\*\*Topic:\*\* SQL Fundamentals for Security Analysis
+**Topic:** SQL Fundamentals for Security Analysis
 
 
 
@@ -44,7 +44,7 @@ from the machines and login_attempts tables
 
 | `FROM` | Specifies which table to query |
 
-| `\*` | Wildcard — selects all columns |
+| `*` | Wildcard — selects all columns |
 
 | `ORDER BY` | Sorts results by a specified column |
 
@@ -62,7 +62,7 @@ a full picture of employee devices:
 
 ```sql
 
-SELECT \* FROM machines;
+SELECT * FROM machines;
 
 ```
 
@@ -110,7 +110,7 @@ Then pulled all login data for a complete view:
 
 ```sql
 
-SELECT \* FROM log_in_attempts;
+SELECT * FROM log_in_attempts;
 
 ```
 
@@ -124,7 +124,7 @@ by date:
 
 ```sql
 
-SELECT \* FROM log_in_attempts ORDER BY login_date;
+SELECT * FROM log_in_attempts ORDER BY login_date;
 
 ```
 
@@ -136,7 +136,7 @@ sort to get precise chronological order:
 
 ```sql
 
-SELECT \* FROM log_in_attempts ORDER BY login_date, login_time;
+SELECT * FROM log_in_attempts ORDER BY login_date, login_time;
 
 ```
 
@@ -148,7 +148,7 @@ SELECT \* FROM log_in_attempts ORDER BY login_date, login_time;
 
 &#x20; from a database table
 
-\- The difference between selecting all columns with `\*`
+\- The difference between selecting all columns with `*`
 
 &#x20; versus selecting specific columns — specific is better
 
